@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://temesgenbelay21.github.io/Bole-Wereda-01-official-website-/sitemap.xml
