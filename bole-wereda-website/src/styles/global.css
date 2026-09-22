@@ -2,11 +2,12 @@
    Bole Wereda 1 — Global Styles
    Design tokens, base resets, shared utilities and theme switching.
    Palette (Addis Ababa City Administration):
-     Primary   #03438A (Emblem Blue)
-     Secondary #0A1128 (Midnight Navy)
-     Accent    #1E6FBF (Accessible Sky Blue)
-     Light     #F4F1DE (Soft Cream)
-     Text      #1C1C1C (Charcoal)
+     Primary   #03438A (primary-blue / Emblem Blue)
+     Secondary #0A1128 (midnight-navy)
+     Accent    #1E6FBF (sky-blue)
+     Light     #F4F1DE (soft-cream)
+     Canvas    #FAF9F5 (muted-bg), #FFFFFF (pure-white)
+     Text      #1C1C1C (charcoal-text)
    Usage rule: white text on Primary/Secondary/Accent surfaces;
    Charcoal text on Soft Cream / white surfaces.
    ========================================================================== */
@@ -129,7 +130,7 @@ p {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--sky-blue);
   transition: color var(--transition);
 }
 
@@ -150,7 +151,7 @@ button {
 }
 
 ::selection {
-  background: var(--color-primary);
+  background: var(--primary-blue);
   color: #fff;
 }
 
@@ -184,7 +185,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--sky-blue);
   margin-bottom: 0.9rem;
 }
 
@@ -200,7 +201,7 @@ button {
   height: 4px;
   margin-top: 0.9rem;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(90deg, var(--primary-blue), var(--sky-blue));
 }
 
 .section-head.center .section-title::after {
@@ -235,12 +236,12 @@ button {
 }
 
 .btn-primary {
-  background: var(--color-primary);
+  background: var(--primary-blue);
   color: #fff;
 }
 
 .btn-primary:hover {
-  background: var(--color-accent);
+  background: var(--sky-blue);
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(30, 111, 191, 0.35);
 }
