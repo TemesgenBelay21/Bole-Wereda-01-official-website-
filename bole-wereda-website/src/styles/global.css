@@ -64,15 +64,15 @@
 
 [data-theme='dark'] {
   --bg-body: #0b1224;
-  --bg-section: #0a1128;
+  --bg-section: var(--midnight-navy);
   --bg-section-alt: #0e1730;
   --bg-card: #111b34;
   --bg-card-hover: #15213f;
   --bg-chip: rgba(74, 143, 214, 0.14);
   --text-body: #ece8d8;
   --text-muted: #a9b0bd;
-  --text-strong: #f4f1de;
-  --text-on-dark: #f4f1de;
+  --text-strong: var(--soft-cream);
+  --text-on-dark: var(--soft-cream);
   --border: rgba(244, 241, 222, 0.14);
   --border-strong: rgba(244, 241, 222, 0.26);
   --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.35);
