@@ -47,11 +47,11 @@
   height: 42px;
   border-radius: 12px;
   background: var(--bg-chip);
-  color: var(--color-primary);
+  color: var(--primary-blue);
 }
 
 [data-theme='dark'] .rowIcon {
-  color: var(--color-accent-light);
+  color: var(--sky-blue-light);
 }
 
 .row div {
@@ -65,7 +65,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--sky-blue);
 }
 
 .rowValue {
@@ -102,15 +102,15 @@
   height: 40px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  color: var(--color-accent);
+  color: var(--sky-blue);
   background: var(--bg-section-alt);
   transition: background-color var(--transition), color var(--transition),
     border-color var(--transition), transform var(--transition);
 }
 
 .social:hover {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
   color: #ffffff;
   transform: translateY(-3px);
 }
