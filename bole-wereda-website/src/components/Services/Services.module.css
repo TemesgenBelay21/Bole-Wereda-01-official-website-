@@ -29,7 +29,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(90deg, var(--primary-blue), var(--sky-blue));
   opacity: 0;
   transition: opacity var(--transition);
 }
@@ -53,19 +53,19 @@
   margin-bottom: 1.1rem;
   border-radius: 14px;
   background: var(--bg-chip);
-  color: var(--color-primary);
+  color: var(--primary-blue);
   transition: background-color var(--transition), color var(--transition),
     transform var(--transition);
 }
 
 .card:hover .icon {
-  background: var(--color-primary);
+  background: var(--primary-blue);
   color: #ffffff;
   transform: scale(1.06);
 }
 
 [data-theme='dark'] .icon {
-  color: var(--color-accent-light);
+  color: var(--sky-blue-light);
 }
 
 [data-theme='dark'] .card:hover .icon {
