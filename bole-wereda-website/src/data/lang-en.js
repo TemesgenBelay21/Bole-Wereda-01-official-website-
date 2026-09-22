@@ -40,6 +40,20 @@ const translations = {
       'Bole Wereda 1, situated within Bole Sub City, serves its community across a wide range of civil, social, economic and administrative services. Its offices are responsible for matters extending from civil registration and residency certification, trade licensing and tax administration, to the protection of the rights of women and children, peace and security, education oversight, and the stewardship of community initiatives such as urban agriculture and volunteerism.',
       'In all of its activities, the office is committed to accessible, efficient and citizen-focused service delivery. Bole Wereda 1 endeavors to conduct its work with transparency, integrity and courtesy, ensuring that every resident receives the service to which they are entitled in a timely and respectful manner.',
     ],
+    pillars: [
+      {
+        title: 'Civic Administration',
+        text: 'Administering the official records, identity documents and legal processes that sustain the community.',
+      },
+      {
+        title: 'Citizen-Focused Service',
+        text: 'Delivering public services designed around the needs and convenience of residents.',
+      },
+      {
+        title: 'Trust and Integrity',
+        text: 'Conducting public affairs with transparency, fairness and accountability at all times.',
+      },
+    ],
   },
 
   services: {
