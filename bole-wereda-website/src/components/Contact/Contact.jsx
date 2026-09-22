@@ -1,14 +1,20 @@
-import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Send, Youtube } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import {
+  FacebookIcon,
+  XIcon,
+  TelegramIcon,
+  YouTubeIcon,
+} from './BrandIcons.jsx'
 import { useLanguage } from '../../context/LanguageContext.jsx'
 import styles from './Contact.module.css'
 
 // PLACEHOLDER social links — replace with the wereda's official profiles
 // before public launch.
 const socials = [
-  { name: 'Facebook', href: 'https://facebook.com/', icon: Facebook },
-  { name: 'Twitter', href: 'https://twitter.com/', icon: Twitter },
-  { name: 'Telegram', href: 'https://telegram.org/', icon: Send },
-  { name: 'YouTube', href: 'https://youtube.com/', icon: Youtube },
+  { name: 'Facebook', href: 'https://facebook.com/', icon: FacebookIcon },
+  { name: 'X (Twitter)', href: 'https://twitter.com/', icon: XIcon },
+  { name: 'Telegram', href: 'https://telegram.org/', icon: TelegramIcon },
+  { name: 'YouTube', href: 'https://youtube.com/', icon: YouTubeIcon },
 ]
 
 const MAP_SRC =
