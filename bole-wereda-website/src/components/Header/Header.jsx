@@ -4,28 +4,6 @@ import { useTheme } from '../../context/ThemeContext.jsx'
 import { useLanguage } from '../../context/LanguageContext.jsx'
 import styles from './Header.module.css'
 
-function Emblem() {
-  return (
-    <svg
-      className={styles.emblem}
-      viewBox="0 0 48 48"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path
-        d="M24 3 4 10v13c0 11.2 8.2 18.6 20 22 11.8-3.4 20-10.8 20-22V10L24 3Z"
-        fill="#03438A"
-        stroke="#F4F1DE"
-        strokeWidth="2"
-      />
-      <path
-        d="M24 10l3.2 6.6 7.2 1-5.2 5.1 1.2 7.2L24 26.5l-6.4 3.4 1.2-7.2-5.2-5.1 7.2-1L24 10Z"
-        fill="#F4F1DE"
-      />
-    </svg>
-  )
-}
-
 const sectionIds = ['hero', 'about', 'services', 'gallery', 'faq', 'contact']
 
 function useScrollSpy() {
@@ -75,7 +53,13 @@ function Header() {
     >
       <div className={`${styles.inner} container`}>
         <a href="#hero" className={styles.brand} onClick={closeMenu}>
-          <Emblem />
+          <img
+            className={styles.logo}
+            src="/images/logo/The-Addis-Ababa-City.jpg"
+            alt={`${t.site.name} — ${t.site.sub}`}
+            width="46"
+            height="46"
+          />
           <span className={styles.brandText}>
             <span className={styles.brandName}>{t.site.name}</span>
             <span className={styles.brandSub}>{t.site.sub}</span>
