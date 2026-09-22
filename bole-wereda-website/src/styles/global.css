@@ -12,26 +12,34 @@
    ========================================================================== */
 
 :root {
-  /* Brand palette (fixed) */
-  --color-primary: #03438a;
-  --color-primary-deep: #023566;
-  --color-secondary: #0a1128;
-  --color-accent: #1e6fbf;
-  --color-accent-light: #4a8fd6;
-  --color-light: #f4f1de;
-  --color-charcoal: #1c1c1c;
+  /* --- CANVAS COLORS (The primary bright background surfaces) --- */
+  --soft-cream: #f4f1de;  /* Ground background tint for section separation */
+  --pure-white: #ffffff;  /* Primary surface color for structural content cards */
+  --muted-bg: #faf9f5;    /* Secondary ultra-light canvas for grid containers */
+
+  /* --- BRANDING & ACCENTS (High-contrast professional highlights) --- */
+  --primary-blue: #03438a;    /* Emblem Blue - Headings, Brand Logos, active CTAs */
+  --sky-blue: #1e6fbf;        /* Accessible Sky Blue - component borders and links */
+
+  /* --- TYPOGRAPHY & TEXT DENSITY --- */
+  --midnight-navy: #0a1128;   /* Midnight Navy - bold, crisp header text, high contrast */
+  --charcoal-text: #1c1c1c;   /* Charcoal - clean, readable body paragraphs */
+
+  /* Derived shades (brand accents) */
+  --primary-blue-deep: #023566;
+  --sky-blue-light: #4a8fd6;
 
   /* Semantic roles — light theme (default) */
-  --bg-body: #f7f5ec;
-  --bg-section: #f4f1de;
-  --bg-section-alt: #ffffff;
-  --bg-card: #ffffff;
-  --bg-card-hover: #ffffff;
+  --bg-body: var(--muted-bg);
+  --bg-section: var(--soft-cream);
+  --bg-section-alt: var(--pure-white);
+  --bg-card: var(--pure-white);
+  --bg-card-hover: var(--pure-white);
   --bg-chip: rgba(3, 67, 138, 0.08);
-  --text-body: #1c1c1c;
+  --text-body: var(--charcoal-text);
   --text-muted: #4a4f5c;
-  --text-strong: #0a1128;
-  --text-on-dark: #f4f1de;
+  --text-strong: var(--midnight-navy);
+  --text-on-dark: var(--soft-cream);
   --border: rgba(10, 17, 40, 0.12);
   --border-strong: rgba(10, 17, 40, 0.2);
   --shadow-soft: 0 6px 24px rgba(10, 17, 40, 0.08);
