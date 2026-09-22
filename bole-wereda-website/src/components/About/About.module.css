@@ -63,7 +63,7 @@
   flex: 0 0 auto;
   border-radius: 12px;
   background: var(--bg-chip);
-  color: var(--color-accent);
+  color: var(--sky-blue);
 }
 
 .pillarTitle {
