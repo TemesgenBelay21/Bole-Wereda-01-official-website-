@@ -21,12 +21,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(
-    135deg,
-    var(--overlay-1) 0%,
-    var(--overlay-2) 68%,
-    rgba(10, 17, 40, 0.96) 100%
-  );
+  background: transparent;
 }
 
 .content {
@@ -37,16 +32,16 @@
 
 .eyebrow {
   margin: 0 0 0.9rem;
-  color: var(--sky-blue-light);
+  color: var(--sky-blue);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .title {
   margin: 0 0 1.1rem;
-  color: #ffffff;
+  color: var(--midnight-navy);
   font-size: clamp(2.3rem, 5.4vw, 4rem);
   font-weight: 800;
   line-height: 1.08;
@@ -55,13 +50,13 @@
 
 .highlight {
   display: block;
-  color: var(--soft-cream);
+  color: var(--sky-blue);
 }
 
 .subtitle {
   max-width: 620px;
   margin: 0 0 2.2rem;
-  color: rgba(244, 241, 222, 0.9);
+  color: rgba(13, 59, 38, 0.85);
   font-size: clamp(1rem, 1.6vw, 1.15rem);
   line-height: 1.7;
 }
@@ -83,15 +78,15 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(244, 241, 222, 0.4);
-  color: rgba(244, 241, 222, 0.85);
-  background: rgba(10, 17, 40, 0.35);
+  border: 1px solid rgba(13, 59, 38, 0.5);
+  color: var(--charcoal-text);
+  background: rgba(246, 243, 226, 0.7);
   animation: bounce 2.2s var(--ease-spring) infinite;
   transition: background-color var(--transition), color var(--transition);
 }
 
 .scrollCue:hover {
-  background: rgba(244, 241, 222, 0.2);
+  background: var(--primary-blue);
   color: #ffffff;
 }
 
