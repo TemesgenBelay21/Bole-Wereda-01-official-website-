@@ -3,7 +3,7 @@ import styles from './Gallery.module.css'
 
 // Collect every image present in the gallery folder so new photos are
 // picked up automatically without code changes.
-const galleryModules = import.meta.glob('/public/images/gallery/*.{jpg,jpeg,png,webp,avif}', {
+const galleryModules = import.meta.glob('/public/images/gallery/*.{jpg,jpeg,png,webp,avif,svg}', {
   eager: true,
   query: '?url',
   import: 'default',
