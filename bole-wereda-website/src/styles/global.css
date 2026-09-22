@@ -1,55 +1,55 @@
 /* ==========================================================================
    Bole Wereda 1 — Global Styles
    Design tokens, base resets, shared utilities and theme switching.
-   Palette (Addis Ababa City Administration):
-     Primary   #03438A (primary-blue / Emblem Blue)
-     Secondary #0A1128 (midnight-navy)
-     Accent    #1E6FBF (sky-blue)
-     Light     #F4F1DE (soft-cream)
-     Canvas    #FAF9F5 (muted-bg), #FFFFFF (pure-white)
-     Text      #1C1C1C (charcoal-text)
-   Usage rule: white text on Primary/Secondary/Accent surfaces;
-   Charcoal text on Soft Cream / white surfaces.
+   Palette (Green & Gold — Ethiopian-inspired):
+     Primary   #1A6B43 (forest-green)
+     Secondary #0D3B26 (deep-pine)
+     Accent    #8A6508 (golden-amber)
+     Light     #F6F3E2 (soft-cream)
+     Canvas    #F7F5EA (muted-bg), #FFFFFF (pure-white)
+     Text      #202A23 (charcoal-text)
+   Usage rule: white text on Primary/Secondary surfaces;
+   Charcoal/amber text on Soft Cream / white surfaces.
    ========================================================================== */
 
 :root {
   /* --- CANVAS COLORS (The primary bright background surfaces) --- */
-  --soft-cream: #f4f1de;  /* Ground background tint for section separation */
+  --soft-cream: #f6f3e2;  /* Ground background tint for section separation */
   --pure-white: #ffffff;  /* Primary surface color for structural content cards */
-  --muted-bg: #faf9f5;    /* Secondary ultra-light canvas for grid containers */
+  --muted-bg: #f7f5ea;    /* Secondary ultra-light canvas for grid containers */
 
-  /* --- BRANDING & ACCENTS (High-contrast professional highlights) --- */
-  --primary-blue: #03438a;    /* Emblem Blue - Headings, Brand Logos, active CTAs */
-  --sky-blue: #1e6fbf;        /* Accessible Sky Blue - component borders and links */
+  /* --- BRANDING & ACCENTS (Green & gold — Ethiopian-inspired) --- */
+  --primary-blue: #1a6b43;    /* Forest Green - Headings, Brand Logos, active CTAs */
+  --sky-blue: #8a6508;        /* Golden Amber - component borders and links */
 
   /* --- TYPOGRAPHY & TEXT DENSITY --- */
-  --midnight-navy: #0a1128;   /* Midnight Navy - bold, crisp header text, high contrast */
-  --charcoal-text: #1c1c1c;   /* Charcoal - clean, readable body paragraphs */
+  --midnight-navy: #0d3b26;   /* Deep Pine - bold, crisp header text, high contrast */
+  --charcoal-text: #202a23;   /* Charcoal - clean, readable body paragraphs */
 
   /* Derived shades (brand accents) */
-  --primary-blue-deep: #023566;
-  --sky-blue-light: #4a8fd6;
+  --primary-blue-deep: #125033;
+  --sky-blue-light: #ddb23f;
 
   /* Semantic roles — light theme (default) */
   --bg-body: var(--muted-bg);
   --bg-section: var(--soft-cream);
   --bg-section-alt: var(--pure-white);
   --bg-card: var(--pure-white);
-  --bg-card-hover: var(--pure-white);
-  --bg-chip: rgba(3, 67, 138, 0.08);
+  --bg-card-hover: #fdfcf5;
+  --bg-chip: rgba(26, 107, 67, 0.09);
   --text-body: var(--charcoal-text);
-  --text-muted: #4a4f5c;
+  --text-muted: #4d574f;
   --text-strong: var(--midnight-navy);
   --text-on-dark: var(--soft-cream);
-  --border: rgba(10, 17, 40, 0.12);
-  --border-strong: rgba(10, 17, 40, 0.2);
-  --shadow-soft: 0 6px 24px rgba(10, 17, 40, 0.08);
-  --shadow-lift: 0 16px 40px rgba(10, 17, 40, 0.16);
-  --ring: rgba(30, 111, 191, 0.55);
-  --header-bg: rgba(10, 17, 40, 0.92);
-  --header-border: rgba(244, 241, 222, 0.16);
-  --overlay-1: rgba(3, 67, 138, 0.78);
-  --overlay-2: rgba(10, 17, 40, 0.92);
+  --border: rgba(13, 59, 38, 0.14);
+  --border-strong: rgba(13, 59, 38, 0.24);
+  --shadow-soft: 0 6px 24px rgba(13, 59, 38, 0.1);
+  --shadow-lift: 0 16px 40px rgba(13, 59, 38, 0.18);
+  --ring: rgba(138, 101, 8, 0.6);
+  --header-bg: rgba(13, 59, 38, 0.92);
+  --header-border: rgba(246, 243, 226, 0.16);
+  --overlay-1: rgba(26, 107, 67, 0.12);
+  --overlay-2: rgba(13, 59, 38, 0.06);
 
   /* Sizing & motion */
   --radius-sm: 10px;
@@ -64,25 +64,25 @@
 }
 
 [data-theme='dark'] {
-  --bg-body: #0b1224;
+  --bg-body: #0b1f15;
   --bg-section: var(--midnight-navy);
-  --bg-section-alt: #0e1730;
-  --bg-card: #111b34;
-  --bg-card-hover: #15213f;
-  --bg-chip: rgba(74, 143, 214, 0.14);
-  --text-body: #ece8d8;
-  --text-muted: #a9b0bd;
-  --text-strong: var(--soft-cream);
+  --bg-section-alt: #0f281b;
+  --bg-card: #123522;
+  --bg-card-hover: #16402b;
+  --bg-chip: rgba(221, 178, 63, 0.14);
+  --text-body: #e9efdf;
+  --text-muted: #a9b7ab;
+  --text-strong: #f2efdc;
   --text-on-dark: var(--soft-cream);
-  --border: rgba(244, 241, 222, 0.14);
-  --border-strong: rgba(244, 241, 222, 0.26);
+  --border: rgba(246, 243, 226, 0.14);
+  --border-strong: rgba(246, 243, 226, 0.26);
   --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.35);
   --shadow-lift: 0 18px 44px rgba(0, 0, 0, 0.5);
-  --ring: rgba(122, 176, 232, 0.6);
-  --header-bg: rgba(10, 17, 40, 0.95);
-  --header-border: rgba(244, 241, 222, 0.16);
-  --overlay-1: rgba(3, 52, 107, 0.8);
-  --overlay-2: rgba(7, 11, 27, 0.94);
+  --ring: rgba(221, 178, 63, 0.6);
+  --header-bg: rgba(8, 30, 19, 0.95);
+  --header-border: rgba(246, 243, 226, 0.16);
+  --overlay-1: rgba(13, 59, 38, 0.5);
+  --overlay-2: rgba(6, 22, 14, 0.8);
 
   color-scheme: dark;
 }
@@ -243,17 +243,17 @@ button {
 .btn-primary:hover {
   background: var(--sky-blue);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(30, 111, 191, 0.35);
+  box-shadow: 0 12px 28px rgba(138, 101, 8, 0.35);
 }
 
 .btn-outline {
-  border-color: rgba(244, 241, 222, 0.65);
-  color: var(--text-on-dark);
+  border-color: rgba(13, 59, 38, 0.5);
+  color: var(--text-strong);
 }
 
 .btn-outline:hover {
-  background: rgba(244, 241, 222, 0.14);
-  border-color: var(--text-on-dark);
+  background: rgba(13, 59, 38, 0.08);
+  border-color: var(--text-strong);
   transform: translateY(-2px);
 }
 
