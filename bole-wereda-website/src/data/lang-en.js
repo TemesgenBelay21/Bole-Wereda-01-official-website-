@@ -30,6 +30,7 @@ const translations = {
     eyebrow: 'Addis Ababa City Administration · Bole Sub City',
     title: 'Serving the Community of',
     titleHighlight: 'Bole Wereda 1',
+    imgAlt: 'Addis Ababa city banner illustrating the environment of Bole Wereda 1',
     subtitle:
       'The wereda office, as the local administrative unit closest to the daily lives of our residents, is dedicated to providing accessible, efficient and citizen-focused civil, social, economic and administrative services.',
     ctaPrimary: 'Explore Our Services',
