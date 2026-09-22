@@ -26,11 +26,38 @@ function Emblem() {
   )
 }
 
+const sectionIds = ['hero', 'about', 'services', 'gallery', 'faq', 'contact']
+
+function useScrollSpy() {
+  const [activeId, setActiveId] = useState('hero')
+
+  useEffect(() => {
+    const onScroll = () => {
+      const offset = 140
+      let current = sectionIds[0]
+      for (const id of sectionIds) {
+        const el = document.getElementById(id)
+        if (el && el.getBoundingClientRect().top - offset <= 0) {
+          current = id
+        }
+      }
+      setActiveId(current)
+    }
+
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  return activeId
+}
+
 function Header() {
   const { theme, toggleTheme } = useTheme()
   const { lang, t, toggleLang } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const activeId = useScrollSpy()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
@@ -59,7 +86,12 @@ function Header() {
           <ul className={styles.navList}>
             {t.nav.map((item) => (
               <li key={item.id}>
-                <a href={`#${item.id}`} className={styles.navLink} onClick={closeMenu}>
+                <a
+                  href={`#${item.id}`}
+                  className={`${styles.navLink} ${activeId === item.id ? styles.navLinkActive : ''}`}
+                  aria-current={activeId === item.id ? 'true' : undefined}
+                  onClick={closeMenu}
+                >
                   {item.label}
                 </a>
               </li>

@@ -86,6 +86,12 @@
   background: rgba(244, 241, 222, 0.1);
 }
 
+.navLinkActive,
+.navLinkActive:hover {
+  color: #ffffff;
+  background: rgba(30, 111, 191, 0.42);
+}
+
 .actions {
   display: flex;
   align-items: center;
