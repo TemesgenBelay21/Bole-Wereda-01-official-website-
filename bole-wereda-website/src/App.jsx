@@ -9,6 +9,7 @@ import Gallery from './components/Gallery/Gallery.jsx'
 import FAQ from './components/FAQ/FAQ.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import BackToTop from './components/BackToTop/BackToTop.jsx'
 
 function useRevealOnScroll() {
   useEffect(() => {
@@ -55,6 +56,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
+        <BackToTop />
       </LanguageProvider>
     </ThemeProvider>
   )

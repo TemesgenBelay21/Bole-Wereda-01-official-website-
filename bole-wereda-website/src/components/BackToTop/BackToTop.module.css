@@ -1,0 +1,38 @@
+.button {
+  position: fixed;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 10px 28px rgba(10, 17, 40, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--transition), transform var(--transition),
+    visibility var(--transition), background-color var(--transition);
+}
+
+.button.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.button:hover {
+  background: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button.visible {
+    transform: none;
+  }
+}
