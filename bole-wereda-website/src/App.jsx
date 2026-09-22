@@ -10,6 +10,7 @@ import FAQ from './components/FAQ/FAQ.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import BackToTop from './components/BackToTop/BackToTop.jsx'
+import SkipLink from './components/SkipLink/SkipLink.jsx'
 
 function useRevealOnScroll() {
   useEffect(() => {
@@ -46,8 +47,9 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
+        <SkipLink />
         <Header />
-        <main>
+        <main id="main">
           <Hero />
           <About />
           <Services />
