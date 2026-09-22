@@ -7,6 +7,13 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.hero} lang={lang}>
+      <img
+        className={styles.bgImage}
+        src="/images/hero/hero.jpg"
+        alt={t.hero.imgAlt}
+        fetchPriority="high"
+        decoding="async"
+      />
       <div className={styles.overlay} aria-hidden="true" />
       <div className={`${styles.content} container`}>
         <span className={styles.badge} data-reveal>
