@@ -12,6 +12,10 @@ const translations = {
     sub: 'Addis Ababa City Administration',
   },
 
+  ui: {
+    skipToContent: 'Skip to main content',
+  },
+
   nav: [
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },

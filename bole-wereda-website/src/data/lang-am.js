@@ -18,6 +18,10 @@ const translations = {
     sub: 'የአዲስ አበባ ከተማ አስተዳደር',
   },
 
+  ui: {
+    skipToContent: 'ወደ ዋናው ይዘት ዝለል',
+  },
+
   nav: [
     { id: 'hero', label: 'መነሻ' },
     { id: 'about', label: 'ስለ ወረዳው' },
