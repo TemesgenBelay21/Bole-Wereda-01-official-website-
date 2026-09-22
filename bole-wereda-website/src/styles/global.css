@@ -1,0 +1,272 @@
+/* ==========================================================================
+   Bole Wereda 1 — Global Styles
+   Design tokens, base resets, shared utilities and theme switching.
+   Palette (Addis Ababa City Administration):
+     Primary   #03438A (Emblem Blue)
+     Secondary #0A1128 (Midnight Navy)
+     Accent    #1E6FBF (Accessible Sky Blue)
+     Light     #F4F1DE (Soft Cream)
+     Text      #1C1C1C (Charcoal)
+   Usage rule: white text on Primary/Secondary/Accent surfaces;
+   Charcoal text on Soft Cream / white surfaces.
+   ========================================================================== */
+
+:root {
+  /* Brand palette (fixed) */
+  --color-primary: #03438a;
+  --color-primary-deep: #023566;
+  --color-secondary: #0a1128;
+  --color-accent: #1e6fbf;
+  --color-accent-light: #4a8fd6;
+  --color-light: #f4f1de;
+  --color-charcoal: #1c1c1c;
+
+  /* Semantic roles — light theme (default) */
+  --bg-body: #f7f5ec;
+  --bg-section: #f4f1de;
+  --bg-section-alt: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #ffffff;
+  --bg-chip: rgba(3, 67, 138, 0.08);
+  --text-body: #1c1c1c;
+  --text-muted: #4a4f5c;
+  --text-strong: #0a1128;
+  --text-on-dark: #f4f1de;
+  --border: rgba(10, 17, 40, 0.12);
+  --border-strong: rgba(10, 17, 40, 0.2);
+  --shadow-soft: 0 6px 24px rgba(10, 17, 40, 0.08);
+  --shadow-lift: 0 16px 40px rgba(10, 17, 40, 0.16);
+  --ring: rgba(30, 111, 191, 0.55);
+  --header-bg: rgba(10, 17, 40, 0.92);
+  --header-border: rgba(244, 241, 222, 0.16);
+  --overlay-1: rgba(3, 67, 138, 0.78);
+  --overlay-2: rgba(10, 17, 40, 0.92);
+
+  /* Sizing & motion */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --container: 1200px;
+  --header-h: 80px;
+  --transition: 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg-body: #0b1224;
+  --bg-section: #0a1128;
+  --bg-section-alt: #0e1730;
+  --bg-card: #111b34;
+  --bg-card-hover: #15213f;
+  --bg-chip: rgba(74, 143, 214, 0.14);
+  --text-body: #ece8d8;
+  --text-muted: #a9b0bd;
+  --text-strong: #f4f1de;
+  --text-on-dark: #f4f1de;
+  --border: rgba(244, 241, 222, 0.14);
+  --border-strong: rgba(244, 241, 222, 0.26);
+  --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 18px 44px rgba(0, 0, 0, 0.5);
+  --ring: rgba(122, 176, 232, 0.6);
+  --header-bg: rgba(10, 17, 40, 0.95);
+  --header-border: rgba(244, 241, 222, 0.16);
+  --overlay-1: rgba(3, 52, 107, 0.8);
+  --overlay-2: rgba(7, 11, 27, 0.94);
+
+  color-scheme: dark;
+}
+
+/* Base ---------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-body);
+  color: var(--text-body);
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif,
+    'Noto Sans Ethiopic', 'Ebrima', 'Nyala', 'Kefa', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-strong);
+  line-height: 1.2;
+  margin: 0 0 0.6em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--color-accent);
+  transition: color var(--transition);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* Layout utilities ----------------------------------------------------- */
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+  scroll-margin-top: calc(var(--header-h) + 12px);
+  position: relative;
+}
+
+.section-head {
+  max-width: 720px;
+  margin-bottom: 2.75rem;
+}
+
+.section-head.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.9rem;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 3.4vw, 2.4rem);
+  font-weight: 700;
+}
+
+.section-sub {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+[lang='am'] .section-title {
+  font-family: 'Noto Sans Ethiopic', 'Nyala', 'Ebrima', serif;
+  line-height: 1.4;
+}
+
+/* Buttons --------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.98rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition),
+    background-color var(--transition), color var(--transition),
+    border-color var(--transition);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(30, 111, 191, 0.35);
+}
+
+.btn-outline {
+  border-color: rgba(244, 241, 222, 0.65);
+  color: var(--text-on-dark);
+}
+
+.btn-outline:hover {
+  background: rgba(244, 241, 222, 0.14);
+  border-color: var(--text-on-dark);
+  transform: translateY(-2px);
+}
+
+/* Scroll reveal animation --------------------------------------------- */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s var(--ease-spring),
+    transform 0.7s var(--ease-spring);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Reduced motion -------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
