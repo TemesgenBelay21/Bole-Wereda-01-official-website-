@@ -185,6 +185,20 @@ button {
   font-weight: 700;
 }
 
+.section-title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.section-head.center .section-title::after {
+  margin-inline: auto;
+}
+
 .section-sub {
   color: var(--text-muted);
   font-size: 1.05rem;
