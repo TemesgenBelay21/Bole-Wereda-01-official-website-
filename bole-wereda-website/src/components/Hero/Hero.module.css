@@ -4,7 +4,7 @@
   align-items: center;
   min-height: clamp(520px, 76vh, 760px);
   overflow: hidden;
-  background-color: var(--color-secondary);
+  background-color: var(--midnight-navy);
   background-image: url('/images/hero/hero.jpg');
   background-size: cover;
   background-position: center;
@@ -45,7 +45,7 @@
 
 .eyebrow {
   margin: 0 0 0.9rem;
-  color: var(--color-accent-light);
+  color: var(--sky-blue-light);
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -63,7 +63,7 @@
 
 .highlight {
   display: block;
-  color: var(--color-light);
+  color: var(--soft-cream);
 }
 
 .subtitle {
