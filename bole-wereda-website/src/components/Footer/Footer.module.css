@@ -2,7 +2,7 @@
   background: var(--midnight-navy);
   color: rgba(244, 241, 222, 0.82);
   padding-top: 3.5rem;
-  border-top: 4px solid var(--primary-blue);
+  border-top: 4px solid var(--sky-blue);
 }
 
 .grid {
