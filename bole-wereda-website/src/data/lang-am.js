@@ -26,7 +26,6 @@ const translations = {
   ],
 
   hero: {
-    badge: 'ኦፊሴላዊ ድረ-ገፅ',
     eyebrow: 'የአዲስ አበባ ከተማ አስተዳደር · ቦሌ ክፍለ ከተማ',
     title: 'ህብረተሰቡን በማገልገል ላይ',
     titleHighlight: 'ቦሌ ወረዳ 1',

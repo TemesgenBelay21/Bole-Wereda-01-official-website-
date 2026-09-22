@@ -16,9 +16,6 @@ function Hero() {
       />
       <div className={styles.overlay} aria-hidden="true" />
       <div className={`${styles.content} container`}>
-        <span className={styles.badge} data-reveal>
-          {t.hero.badge}
-        </span>
         <p className={styles.eyebrow} data-reveal style={{ '--reveal-delay': '80ms' }}>
           {t.hero.eyebrow}
         </p>

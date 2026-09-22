@@ -26,7 +26,6 @@ const translations = {
   ],
 
   hero: {
-    badge: 'Official Website',
     eyebrow: 'Addis Ababa City Administration · Bole Sub City',
     title: 'Serving the Community of',
     titleHighlight: 'Bole Wereda 1',
