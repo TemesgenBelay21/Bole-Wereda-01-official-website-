@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(520px, 76vh, 760px);
+  overflow: hidden;
+  background-color: var(--color-secondary);
+  background-image: url('/images/hero/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  isolation: isolate;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    135deg,
+    var(--overlay-1) 0%,
+    var(--overlay-2) 68%,
+    rgba(10, 17, 40, 0.96) 100%
+  );
+}
+
+.content {
+  position: relative;
+  padding-block: 6rem;
+  max-width: 860px;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+  padding: 0.42rem 0.95rem;
+  border: 1px solid rgba(244, 241, 222, 0.45);
+  border-radius: 999px;
+  background: rgba(244, 241, 222, 0.12);
+  color: #f4f1de;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 0.9rem;
+  color: var(--color-accent-light);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0 0 1.1rem;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 5.4vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  display: block;
+  color: var(--color-light);
+}
+
+.subtitle {
+  max-width: 620px;
+  margin: 0 0 2.2rem;
+  color: rgba(244, 241, 222, 0.9);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.scrollCue {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(244, 241, 222, 0.4);
+  color: rgba(244, 241, 222, 0.85);
+  background: rgba(10, 17, 40, 0.35);
+  animation: bounce 2.2s var(--ease-spring) infinite;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.scrollCue:hover {
+  background: rgba(244, 241, 222, 0.2);
+  color: #ffffff;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-4px);
+  }
+}
+
+@media (max-width: 560px) {
+  .content {
+    padding-block: 4.5rem;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions .btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}
