@@ -13,8 +13,8 @@ A static, informational single-page website for **Bole Wereda 1**, an administra
 
 Single-page site with sticky anchor navigation. Sections in order:
 
-1. **Header** — emblem logo, wereda name, sticky nav with scroll-spy active states, dark/light toggle, Amharic/English toggle, mobile menu
-2. **Hero** — full-width banner photo with navy/blue overlay, formal welcome message and CTA buttons
+1. **Header** — Addis Ababa City logo image, wereda name, sticky nav with scroll-spy active states, dark/light toggle, Amharic/English toggle, mobile menu
+2. **Hero** — direct banner image with navy/blue overlay, formal welcome message and CTA buttons
 3. **About** — formal introduction to the wereda as the local administrative unit closest to citizens, plus institutional value pillars
 4. **Services** — grid of the 12 citizen-facing service offices (3-col desktop / 2 tablet / 1 mobile)
 5. **Gallery** — responsive photo grid that auto-loads every image placed in `public/images/gallery/`
@@ -66,14 +66,14 @@ bole-wereda-website/
     │   └── LanguageContext.jsx
     ├── data/
     │   ├── lang-en.js   → formal English content
-    │   └── lang-am.js   → placeholder Amharic (flagged for native review)
+    │   └── lang-am.js   → formal Amharic content (fully rewritten)
     ├── App.jsx
     └── main.jsx
 ```
 
 ## Features
 
-- **Design system** — Emblem Blue `#03438A`, Midnight Navy `#0A1128`, Accessible Sky Blue `#1E6FBF`, Soft Cream `#F4F1DE`, Charcoal `#1C1C1C`, exposed as CSS custom properties
+- **Design system** — Emblem Blue `#03438A` (`--primary-blue`), Midnight Navy `#0A1128` (`--midnight-navy`), Accessible Sky Blue `#1E6FBF` (`--sky-blue`), Soft Cream `#F4F1DE` (`--soft-cream`), Pure White `#FFFFFF` (`--pure-white`), Muted Canvas `#FAF9F5` (`--muted-bg`), Charcoal `#1C1C1C` (`--charcoal-text`), exposed as CSS custom properties
 - **Light/dark mode** — `data-theme` attribute over deep-blue palette, persisted via `localStorage`, default respects system preference
 - **Amharic/English toggle** — all content driven by `lang-en.js` / `lang-am.js` translation objects; on-screen text never hardcoded
 - **Motion** — IntersectionObserver scroll-reveal, card hover lifts, accordion expansion, respecting `prefers-reduced-motion`
@@ -82,6 +82,8 @@ bole-wereda-website/
 ## Content Status
 
 - All English copy (About, 12 services, 6 FAQs, Contact, Footer) is written in a formal, professional, civic tone.
-- **Amharic copy is placeholder machine-style text** and is flagged in `src/data/lang-am.js`; it MUST be reviewed and corrected by a fluent Amharic-speaking reviewer before public launch.
+- The Amharic copy in `src/data/lang-am.js` has been fully rewritten in a formal, professional, civic tone matching the English version.
+- The brand is built on a seven-token canvas palette: `--soft-cream`, `--pure-white`, `--muted-bg`, `--primary-blue`, `--sky-blue`, `--midnight-navy`, `--charcoal-text`.
+- The header logo and favicon use `public/images/logo/The-Addis-Ababa-City.jpg`; the hero banner is rendered as a direct `<img>` rather than a CSS background.
 - **Contact details (telephone, email, social profiles, map) are placeholders** and must be replaced with the wereda's official information before launch.
 - Gallery currently contains one photo; new photos dropped into `public/images/gallery/` are picked up automatically on rebuild.
