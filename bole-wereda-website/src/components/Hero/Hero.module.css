@@ -40,7 +40,7 @@
 
 .eyebrow {
   margin: 0 0 0.9rem;
-  color: var(--accent);
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -69,7 +69,7 @@
 .subtitle {
   max-width: 620px;
   margin: 0 0 2.2rem;
-  color: #94a3b8;
+  color: #ffffff;
   font-size: clamp(1rem, 1.6vw, 1.15rem);
   line-height: 1.7;
   text-shadow:
