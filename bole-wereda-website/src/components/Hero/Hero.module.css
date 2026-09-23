@@ -4,7 +4,7 @@
   align-items: center;
   min-height: clamp(520px, 76vh, 760px);
   overflow: hidden;
-  background-color: var(--midnight-navy);
+  background-color: var(--ink);
   isolation: isolate;
 }
 
@@ -15,13 +15,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.3;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: transparent;
+  background: linear-gradient(
+    to top,
+    rgba(11, 12, 16, 0.92) 0%,
+    rgba(11, 12, 16, 0.55) 45%,
+    rgba(11, 12, 16, 0.22) 75%,
+    rgba(11, 12, 16, 0.12) 100%
+  );
 }
 
 .content {
