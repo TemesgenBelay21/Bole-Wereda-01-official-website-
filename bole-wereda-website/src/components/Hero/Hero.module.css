@@ -39,7 +39,7 @@
 
 .eyebrow {
   margin: 0 0 0.9rem;
-  color: var(--sky-blue);
+  color: var(--accent);
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -48,7 +48,7 @@
 
 .title {
   margin: 0 0 1.1rem;
-  color: var(--midnight-navy);
+  color: #ffffff;
   font-size: clamp(2.3rem, 5.4vw, 4rem);
   font-weight: 800;
   line-height: 1.08;
@@ -57,13 +57,13 @@
 
 .highlight {
   display: block;
-  color: var(--sky-blue);
+  color: var(--accent);
 }
 
 .subtitle {
   max-width: 620px;
   margin: 0 0 2.2rem;
-  color: rgba(13, 59, 38, 0.85);
+  color: #94a3b8;
   font-size: clamp(1rem, 1.6vw, 1.15rem);
   line-height: 1.7;
 }
@@ -85,15 +85,15 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(13, 59, 38, 0.5);
-  color: var(--charcoal-text);
-  background: rgba(246, 243, 226, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.08);
   animation: bounce 2.2s var(--ease-spring) infinite;
   transition: background-color var(--transition), color var(--transition);
 }
 
 .scrollCue:hover {
-  background: var(--primary-blue);
+  background: var(--accent);
   color: #ffffff;
 }
 
