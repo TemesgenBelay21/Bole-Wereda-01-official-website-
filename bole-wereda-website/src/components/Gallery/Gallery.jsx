@@ -39,9 +39,6 @@ function Gallery() {
                   loading="lazy"
                 />
               </div>
-              <figcaption className={styles.caption}>
-                <span className={styles.captionText}>{t.gallery.caption}</span>
-              </figcaption>
             </figure>
           ))}
         </div>

@@ -11,8 +11,6 @@
 .item {
   position: relative;
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 480px;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -22,9 +20,8 @@
 }
 
 .media {
-  position: relative;
-  min-height: 256px;
-  aspect-ratio: 4 / 3;
+  position: absolute;
+  inset: 0;
   overflow: hidden;
   background: var(--bg-section);
 }
@@ -40,15 +37,6 @@
 
 .media:hover .img {
   transform: scale(1.05);
-}
-
-.caption {
-  margin-top: auto;
-  padding: 1.1rem 1.25rem 1.25rem;
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-align: left;
 }
 
 @media (max-width: 900px) {
