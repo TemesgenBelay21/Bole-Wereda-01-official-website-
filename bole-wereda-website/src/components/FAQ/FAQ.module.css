@@ -20,7 +20,7 @@
 }
 
 .item.open {
-  border-color: var(--sky-blue);
+  border-color: var(--accent-deep);
   box-shadow: var(--shadow-lift);
 }
 
@@ -42,7 +42,7 @@
 }
 
 .question:hover {
-  color: var(--sky-blue);
+  color: var(--accent-deep);
 }
 
 .iconWrap {
@@ -54,17 +54,17 @@
   height: 32px;
   border-radius: 50%;
   background: var(--bg-chip);
-  color: var(--primary-blue);
+  color: var(--accent);
   transition: background-color var(--transition), color var(--transition),
     transform var(--transition);
 }
 
 [data-theme='dark'] .iconWrap {
-  color: var(--sky-blue-light);
+  color: var(--accent-soft);
 }
 
 .item.open .iconWrap {
-  background: var(--primary-blue);
+  background: var(--accent);
   color: #ffffff;
   transform: rotate(180deg);
 }
