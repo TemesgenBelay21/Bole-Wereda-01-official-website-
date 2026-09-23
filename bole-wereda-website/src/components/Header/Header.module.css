@@ -47,7 +47,7 @@
 }
 
 .brandName {
-  color: #f4f1de;
+  color: #ffffff;
   font-size: 1.08rem;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -56,7 +56,7 @@
 }
 
 .brandSub {
-  color: rgba(244, 241, 222, 0.72);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 0.74rem;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -77,7 +77,7 @@
 .navLink {
   display: inline-block;
   padding: 0.5rem 0.8rem;
-  color: rgba(244, 241, 222, 0.86);
+  color: rgba(255, 255, 255, 0.86);
   font-size: 0.86rem;
   font-weight: 600;
   text-decoration: none;
@@ -87,13 +87,13 @@
 
 .navLink:hover {
   color: #ffffff;
-  background: rgba(244, 241, 222, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .navLinkActive,
 .navLinkActive:hover {
   color: #ffffff;
-  background: rgba(138, 101, 8, 0.42);
+  background: rgba(242, 140, 56, 0.42);
 }
 
 .actions {
@@ -110,10 +110,10 @@
   min-width: 40px;
   height: 40px;
   padding: 0 0.65rem;
-  border: 1px solid rgba(244, 241, 222, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 10px;
-  background: rgba(244, 241, 222, 0.06);
-  color: #f4f1de;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
   font-size: 0.8rem;
   font-weight: 700;
   transition: background-color var(--transition), border-color var(--transition),
@@ -121,8 +121,8 @@
 }
 
 .iconButton:hover {
-  background: rgba(244, 241, 222, 0.16);
-  border-color: rgba(244, 241, 222, 0.45);
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.45);
   transform: translateY(-1px);
 }
 

@@ -1,8 +1,8 @@
 .footer {
-  background: var(--midnight-navy);
-  color: rgba(244, 241, 222, 0.82);
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.82);
   padding-top: 3.5rem;
-  border-top: 4px solid var(--sky-blue);
+  border-top: 4px solid var(--accent);
 }
 
 .grid {
@@ -14,7 +14,7 @@
 
 .heading {
   margin: 0 0 1rem;
-  color: #f4f1de;
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -22,7 +22,7 @@
 
 .blurb {
   margin: 0;
-  color: rgba(244, 241, 222, 0.72);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 0.94rem;
   line-height: 1.7;
   max-width: 42ch;
@@ -39,7 +39,7 @@
 
 .link {
   display: inline-block;
-  color: rgba(244, 241, 222, 0.78);
+  color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
   font-size: 0.94rem;
   transition: color var(--transition), transform var(--transition);
@@ -65,13 +65,13 @@
   gap: 0.6rem;
   font-size: 0.92rem;
   line-height: 1.55;
-  color: rgba(244, 241, 222, 0.78);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .contactIcon {
   flex: 0 0 auto;
   margin-top: 3px;
-  color: var(--sky-blue-light);
+  color: var(--accent-soft);
 }
 
 .bottomBar {
@@ -81,17 +81,17 @@
   justify-content: space-between;
   gap: 0.5rem 1rem;
   padding: 1.25rem 0 1.5rem;
-  border-top: 1px solid rgba(244, 241, 222, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .credit {
-  color: #f4f1de;
+  color: #ffffff;
   font-weight: 700;
   font-size: 0.95rem;
 }
 
 .meta {
-  color: rgba(244, 241, 222, 0.62);
+  color: rgba(255, 255, 255, 0.62);
   font-size: 0.84rem;
 }
 
