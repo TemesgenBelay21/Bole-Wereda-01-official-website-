@@ -31,12 +31,14 @@ function Gallery() {
               data-reveal
               style={{ '--reveal-delay': `${index * 90}ms` }}
             >
-              <img
-                src={image.url}
-                alt={t.gallery.imgAlt}
-                className={styles.img}
-                loading="lazy"
-              />
+              <div className={styles.media}>
+                <img
+                  src={image.url}
+                  alt={t.gallery.imgAlt}
+                  className={styles.img}
+                  loading="lazy"
+                />
+              </div>
               <figcaption className={styles.caption}>
                 <span className={styles.captionText}>{t.gallery.caption}</span>
               </figcaption>
