@@ -18,7 +18,7 @@ const socials = [
 ]
 
 const MAP_SRC =
-  'https://www.google.com/maps?q=Bole%20Sub%20City%2C%20Addis%20Ababa%2C%20Ethiopia&output=embed'
+  'https://www.google.com/maps?q=8.9511045,38.7561397&z=15&output=embed'
 
 function Contact() {
   const { lang, t } = useLanguage()
