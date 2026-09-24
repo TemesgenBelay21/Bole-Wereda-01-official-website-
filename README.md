@@ -25,7 +25,6 @@ Single-page site with sticky anchor navigation. Sections in order:
 ## Getting Started
 
 ```bash
-cd bole-wereda-website
 npm install
 npm run dev
 ```
@@ -33,7 +32,6 @@ npm run dev
 Build for production (always verify with a production build):
 
 ```bash
-cd bole-wereda-website
 npm run build
 npm run preview
 ```
@@ -41,7 +39,6 @@ npm run preview
 ## Project Structure
 
 ```
-bole-wereda-website/
 ├── index.html
 ├── public/
 │   └── images/
