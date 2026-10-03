@@ -50,10 +50,6 @@
   color: var(--accent);
 }
 
-[data-theme='dark'] .rowIcon {
-  color: var(--accent-soft);
-}
-
 .row div {
   display: flex;
   flex-direction: column;
