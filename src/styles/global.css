@@ -58,9 +58,9 @@
 [data-theme='dark'] {
   --bg-body: #0b1020;
   --bg-section: #101624;
-  --bg-section-alt: #111111;
-  --bg-card: #1a1a1a;
-  --bg-card-hover: #222222;
+  --bg-section-alt: #131a2b;
+  --bg-card: #162033;
+  --bg-card-hover: #1a253a;
   --bg-chip: rgba(242, 140, 56, 0.2);
   --text-body: #a0aec0;
   --text-muted: #718096;
