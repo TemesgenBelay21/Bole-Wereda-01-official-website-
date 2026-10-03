@@ -34,10 +34,8 @@
   height: 44px;
   flex: 0 0 auto;
   object-fit: contain;
-  padding: 2px;
+  display: block;
   border-radius: 10px;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .brandText {
