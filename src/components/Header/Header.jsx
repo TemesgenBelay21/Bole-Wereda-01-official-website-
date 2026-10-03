@@ -57,7 +57,8 @@ function Header() {
             className={styles.logo}
             src="/images/logo/The-Addis-Ababa-City.jpg"
             alt={`${t.site.name} — ${t.site.sub}`}
-            height="44"
+            width="48"
+            height="48"
           />
           <span className={styles.brandText}>
             <span className={styles.brandName}>{t.site.name}</span>
