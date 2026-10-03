@@ -58,12 +58,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   flex: 0 0 auto;
   border-radius: 12px;
   background: var(--bg-chip);
-  color: var(--accent-deep);
+  color: var(--accent);
 }
 
 .pillarTitle {
