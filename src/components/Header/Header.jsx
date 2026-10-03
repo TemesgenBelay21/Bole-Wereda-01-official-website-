@@ -55,7 +55,7 @@ function Header() {
         <a href="#hero" className={styles.brand} onClick={closeMenu}>
           <img
             className={styles.logo}
-            src="/images/logo/addis-ababa-logo.jpg"
+            src="/images/logo/addis-ababa-city-administration-logo.jpg"
             alt={`${t.site.name} — ${t.site.sub}`}
             height="48"
           />
