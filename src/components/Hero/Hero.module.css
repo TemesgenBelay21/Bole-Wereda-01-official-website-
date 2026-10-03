@@ -30,6 +30,16 @@
   );
 }
 
+[data-theme='dark'] .hero .overlay {
+  background: linear-gradient(
+    to top,
+    rgba(11, 12, 16, 0.65) 0%,
+    rgba(11, 12, 16, 0.36) 32%,
+    rgba(11, 12, 16, 0.16) 60%,
+    rgba(11, 12, 16, 0.08) 100%
+  );
+}
+
 .hero .content {
   margin-inline: 0;
   max-width: 860px;
