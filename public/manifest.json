@@ -1,0 +1,16 @@
+{
+  "name": "Bole Wereda 1",
+  "short_name": "Bole Wereda 1",
+  "description": "Official website of Bole Wereda 1, Bole Sub City, Addis Ababa City Administration.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0C10",
+  "theme_color": "#0B0C10",
+  "icons": [
+    {
+      "src": "/images/logo/The-Addis-Ababa-City.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
