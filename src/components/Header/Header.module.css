@@ -24,7 +24,7 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.9rem;
   text-decoration: none;
   min-width: 0;
 }
