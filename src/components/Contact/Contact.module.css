@@ -133,9 +133,8 @@
 .mapFrame {
   flex: 1;
   min-height: 340px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid var(--border);
   background: var(--bg-section);
 }
 
