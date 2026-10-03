@@ -1,29 +1,26 @@
 /* ==========================================================================
    Bole Wereda 1 — Global Styles
    Design tokens, base resets, shared utilities and theme switching.
-   Palette (Night Mode — Ethiopian civic brand):
-     Background        #0B0C10 (rich jet black)
-     Card / Hub        #1F2833 (deep charcoal blue)
-     Accent / Buttons  #F28C38 (vibrant brand orange)
-     Primary Text      #FFFFFF (pure white)
-     Secondary Text    #94A3B8 (muted slate gray)
-   Usage rule: white text on dark surfaces; dark text on light surfaces;
-   orange accent reserved for actions, active states and highlights.
+   Palette (civic light + charcoal-blue dark):
+     Light canvas     #F6F1E8 (warm cream)
+     Light ink        #152238 (deep navy)
+     Dark canvas      charcoal-blue (not near-black)
+     Accent           gold-amber for actions and highlights
    ========================================================================== */
 
 :root {
-  /* --- BRAND CORE (Night palette) --- */
+  /* --- BRAND CORE --- */
   --accent: #f28c38;          /* Vibrant brand orange — buttons, active CTAs */
   --accent-deep: #e0761b;     /* Deep orange — links and strong borders */
   --accent-strong: #c9620f;   /* Burnt orange — pressed / high-contrast states */
   --accent-soft: #ffb57a;     /* Soft orange — icons on dark surfaces */
-  --ink: #0b0c10;             /* Rich jet black — headings / bold text */
+  --ink: #152238;             /* Deep navy — headings / bold text */
   --slate: #94a3b8;           /* Muted slate gray — secondary text */
 
   /* --- CANVAS COLORS (Light-theme background surfaces) --- */
-  --soft-cream: #f5f7fa;    /* Ground background tint for section separation */
-  --pure-white: #ffffff;    /* Primary surface color for structural content cards */
-  --muted-bg: #eef1f6;      /* Secondary ultra-light canvas for grid containers */
+  --soft-cream: #f6f1e8;    /* Warm cream ground for section separation */
+  --pure-white: #fffdf8;    /* Primary surface color for structural content cards */
+  --muted-bg: #efe8dc;      /* Soft civic canvas for the page body */
 
   /* Semantic roles — light theme (default) */
   --bg-body: var(--muted-bg);
@@ -59,7 +56,7 @@
 }
 
 [data-theme='dark'] {
-  --bg-body: #050505;
+  --bg-body: #0b1020;
   --bg-section: #0a0a0a;
   --bg-section-alt: #111111;
   --bg-card: #1a1a1a;
