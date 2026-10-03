@@ -66,8 +66,8 @@
   --text-muted: #8f9bb3;
   --text-strong: #ffffff;
   --text-on-dark: #ffffff;
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.16);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.6);
   --shadow-lift: 0 10px 40px rgba(0, 0, 0, 0.8);
   --ring: rgba(242, 140, 56, 0.8);
