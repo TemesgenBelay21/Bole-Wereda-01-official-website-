@@ -4,8 +4,8 @@
   z-index: 100;
   background: var(--header-bg);
   border-bottom: 1px solid var(--header-border);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   transition: box-shadow var(--transition), background-color var(--transition);
 }
 
@@ -30,12 +30,15 @@
 }
 
 .logo {
-  width: 44px;
+  width: auto;
   height: 44px;
+  max-width: 100px;
   flex: 0 0 auto;
   object-fit: contain;
   display: block;
   border-radius: var(--radius-sm);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .brandText {
@@ -179,7 +182,8 @@
   }
 
   .logo {
-    width: 42px;
-    height: 42px;
+    height: 38px;
+    width: auto;
+    max-width: 90px;
   }
 }
