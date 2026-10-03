@@ -37,9 +37,9 @@
 
 .pillar {
   display: flex;
-  gap: 0.95rem;
+  gap: 0.9rem;
   align-items: flex-start;
-  padding: 1.2rem 1.35rem;
+  padding: 1.1rem 1.2rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -49,7 +49,7 @@
 }
 
 .pillar:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-lift);
   border-color: var(--border-strong);
 }
