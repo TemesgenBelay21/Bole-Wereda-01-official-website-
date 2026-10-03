@@ -76,8 +76,6 @@ function Contact() {
           </div>
 
           <div className={styles.mapCard} data-reveal style={{ '--reveal-delay': '160ms' }}>
-            <span className={styles.mapTitle}>{t.contact.mapTitle}</span>
-            <p className={styles.mapHint}>{t.contact.mapHint}</p>
             <div className={styles.mapFrame}>
               <iframe
                 src={MAP_SRC}
