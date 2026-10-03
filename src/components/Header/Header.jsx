@@ -55,9 +55,8 @@ function Header() {
         <a href="#hero" className={styles.brand} onClick={closeMenu}>
           <img
             className={styles.logo}
-            src="/images/logo/The-Addis-Ababa-City.jpg"
+            src="/images/logo/addis-ababa-logo.jpg"
             alt={`${t.site.name} — ${t.site.sub}`}
-            width="48"
             height="48"
           />
           <span className={styles.brandText}>
