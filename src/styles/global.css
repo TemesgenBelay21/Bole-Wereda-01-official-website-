@@ -68,8 +68,8 @@
   --text-on-dark: #ffffff;
   --border: rgba(255, 255, 255, 0.06);
   --border-strong: rgba(255, 255, 255, 0.14);
-  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.6);
-  --shadow-lift: 0 10px 40px rgba(0, 0, 0, 0.8);
+  --shadow-soft: 0 8px 28px rgba(2, 6, 23, 0.55);
+  --shadow-lift: 0 18px 48px rgba(2, 6, 23, 0.7);
   --ring: rgba(242, 140, 56, 0.8);
   --header-bg: rgba(5, 5, 5, 0.85);
   --header-border: rgba(255, 255, 255, 0.05);
