@@ -22,27 +22,7 @@
     border-color var(--transition);
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-deep));
-  opacity: 0;
-  transition: opacity var(--transition);
-}
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lift);
-  border-color: var(--border-strong);
-}
-
-.card:hover::before {
-  opacity: 1;
-}
 
 .icon {
   display: inline-flex;
